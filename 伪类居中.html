@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            text-align: center;
+            height: 400px;
+            background: #4dc71f;
+        }
+        #container:after{
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+        #center-div{
+            display: inline-block;
+            vertical-align: middle;
+            background: #2aabd2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="center-div">
+            用伪类撑起100%的高度，设置伪类vertical-align:middle，使得元素垂直居中
+        </div>
+    </div>
+</body>

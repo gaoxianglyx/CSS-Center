@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+         position: relative;
+            height: 200px;
+            background: #333;
+        }
+        #center-div{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #demo {
+          width: 0;
+          height: 0;
+          border-width: 30px;
+          border-style: solid;
+          border-color: transparent transparent red transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="center-div">
+            在 translate 函数当中使用百分比是以该元素的内容区、补白(padding)、边框(border)为标准计算的
+        </div>
+    </div>
+    <div id="demo"></div>
+</body>
+</html>
